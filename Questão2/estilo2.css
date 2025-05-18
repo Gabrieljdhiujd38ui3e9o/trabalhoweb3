@@ -1,0 +1,51 @@
+body {
+  margin:0;
+  background-color: white;
+}
+
+.header {
+  height: 70px;
+  background-color: rebeccapurple; 
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  background-color: red; 
+  flex-direction: column;
+}
+
+.div-azul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.div-amarelo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.box {
+  height: 300px;
+  border-radius: 5px;
+}
+
+.azul {
+  background-color:blue; 
+  
+  
+}
+
+.amarelo {
+  background-color: yellow;
+  
+}
+
+.rodape {
+  height: 30px;
+  background-color: black; 
+  margin-top: 10px;
+}

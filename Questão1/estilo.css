@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(2, 60px);
+    gap: 10px;
+  }
+
+.box{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+.vermelho{background-color: red;}
+.azul{background-color: blue;}
+.verde{background-color: lawngreen;}
+.amarelo{background-color: yellow;}

@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  display: none;
+}
+
+.carta {
+  width: 100px;
+  height: 100px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carta::before {
+  content: "?";
+  font-size: 2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#c1:checked + label::before,
+#c2:checked + label::before,
+#c3:checked + label::before,
+#c4:checked + label::before,
+#c5:checked + label::before,
+#c6:checked + label::before,
+#c7:checked + label::before,
+#c8:checked + label::before {
+  content: "";
+}
+
+#c1:checked + label,
+#c2:checked + label {
+  background-image: url('Rock-roll.jpg');
+}
+
+#c3:checked + label,
+#c4:checked + label {
+  background-image: url('Rock_by_theShad0w.png');
+}
+
+#c5:checked + label,
+#c6:checked + label {
+  background-image: url('banda-system-of-a-down-1.jpg');
+}
+
+#c7:checked + label,
+#c8:checked + label {
+  background-image: url('imagem2.avif');
+}
